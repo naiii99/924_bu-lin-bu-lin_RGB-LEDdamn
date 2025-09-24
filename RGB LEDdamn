@@ -1,0 +1,28 @@
+void setup() {
+  // initialize digital pin as an output.
+  pinMode(3, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(10, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(3, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(10, LOW);
+  // turn the RED LED on
+  delay(300);
+  // wait for a second
+  digitalWrite(3, LOW);
+  digitalWrite(6, HIGH);
+  digitalWrite(10, LOW);
+  // turn the RED LED off
+  delay(300);
+  // wait for a second
+  digitalWrite(3, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(10, HIGH);
+  // turn the RED LED off
+  delay(300);
+  // wait for a second
+}
